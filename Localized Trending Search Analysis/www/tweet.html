@@ -1,0 +1,30 @@
+<html>
+    <body>
+      <link rel="stylesheet" type/css" href="css/index.css">
+      <div class="topnav">
+        <a href="index.html.html">Home</a>
+        <a class="active" href="tweet.html">Tweet Sentiment Analysis</a>
+        <a href="trending.html">Trending Search</a>
+      </div>
+      <div class="mod">
+        <h1>Twitter Sentiment Analysis</h1>
+        What to search? :  <input type="text" id=t1>
+      <div class="rangeslider"> 
+        <p>Number of Tweets : <span id="demo"></span></p> 
+        <input type="range" min="10" max="5000" value="10" class="myslider" id="t2"> 
+      </div> 
+      <br>
+      <button id="tweet" onclick="tweet(); insert();">Go</button> 
+      </div>
+      <br>
+      <div class="box">
+      <table align = "left" border="1" id="p1" class="q1"> 
+      </table> 
+      </div>
+      <br>
+      <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+      <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+      <script src="js/index.js"></script>
+      <script src="js/insert.js"></script>
+    </body>
+</html>
